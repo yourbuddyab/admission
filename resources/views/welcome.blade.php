@@ -39,7 +39,6 @@
               <div class="d-md-flex d-block justify-content-between">
                
                 <svg version="1.0" xmlns="http://www.w3.org/2000/svg" class="d-md-flex d-none w-25" viewBox="0 0 500.000000 206.000000" preserveAspectRatio="xMidYMid meet">
-
                   <g transform="translate(0.000000,206.000000) scale(0.100000,-0.100000)" fill="#333" stroke="none">
                     <path d="M375 1635 l-25 -24 0 -479 c0 -457 1 -481 19 -503 19 -24 19 -24 308
                     -29 l288 -5 3 -107 3 -107 -47 -3 c-27 -2 -49 -8 -52 -16 -3 -10 47 -12 240
@@ -118,11 +117,27 @@
                   <label for="mname">Mother Name  <span class="text-danger">*</span></label>
                   <input type="text" name="mname" id="mname" class="form-control" value="{{old('mname')}}" placeholder="Enter Student Mother Name">
                 </div>
-                <div class="form-group">
-                  <label for="gender">Gender <span class="text-danger">* </span>
-                  <label for="male"><input type="radio" name="gender" id="male"> Male</label>
-                  <label for="female"><input type="radio" name="gender" id="female"> Female</label>
-                </label>
+                <div class="form-group row">
+                  <div class="col-md-6 my-md-0 my-3">
+                    <label for="gender">Gender<span class="text-danger">* </span></label>
+                    <select class="form-control" name="gender" id="gender" required>
+                      <option value="">Choose Gender</option>
+                      <option value="M">Male</option>
+                      <option value="F">Female</option>
+                      <option value="O">Other</option>
+                    </select>
+                  </div>
+               
+                  <div class="col-md-6 my-md-0 my-3">
+                    <label for="category">Category<span class="text-danger">* </span></label>
+                    <select class="form-control" name="category" id="category" required>
+                      <option value="">Choose Category</option>
+                      <option value="GEN">GEN</option>
+                      <option value="OBC">OBC</option>
+                      <option value="SC/ST">SC/ST</option>
+                      <option value="SC/ST">SC/ST</option>
+                    </select>
+                  </div>
                 </div>
                 <div class="row">
                   <div class="col-md-4">
