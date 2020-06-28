@@ -19,6 +19,8 @@ class CreateAddmissionRequestsTable extends Migration
             $table->string('lname');
             $table->string('fname');
             $table->string('mname');
+            $table->string('gender');
+            $table->string('category');
             $table->string('dob');
             $table->string('phone');
             $table->string('email');

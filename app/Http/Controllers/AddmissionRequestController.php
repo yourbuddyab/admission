@@ -23,14 +23,15 @@ class AddmissionRequestController extends Controller
     public function validateRequest($request)
     {
         $request->validate([
-            'sname' => 'required',
-            'lname' => 'required',
-            'fname' => 'required',
-            'mname' => 'required',
+            'sname' => 'required|string|min:3',
+            'lname' => 'required|string|min:3',
+            'fname' => 'required|string|min:5',
+            'mname' => 'required|string|min:5',
             'gender' => 'required',
+            'category' => 'required',
             'dob' => 'required',
             'phone' => 'required',
-            'email' => 'required',
+            'email' => 'required|email',
             'oneaddress' => 'required',
             'twoaddress' => 'required',
             'threeaddress' => 'required',
